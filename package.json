@@ -1,17 +1,16 @@
 {
-  "name": "redux-saga-tester",
+  "name": "@oda-omaolo/redux-saga-tester",
   "version": "1.0.1",
   "description": "Full redux environment testing helper for redux-saga",
   "main": "dist/SagaTester.js",
   "scripts": {
     "lint": "eslint './src/**/*.js' './test/**/*.js' './examples/**/*.js'",
-    "examples": "mocha --compilers js:babel-register './examples/**/*.js'",
+    "examples": "mocha --require babel-register './examples/**/*.js'",
     "prepublish": "npm test && npm run compile",
-    "test": "mocha --compilers js:babel-register && npm run lint",
-    "test-dev": "mocha --watch --compilers js:babel-register",
+    "test": "mocha --require babel-register && npm run lint",
+    "test-dev": "mocha --watch --require babel-register",
     "compile": "babel -d dist/ src/",
-    "build": ":",
-    "release": "wnpm-release --no-shrinkwrap"
+    "build": ":"
   },
   "repository": {
     "type": "git",
@@ -39,15 +38,11 @@
     "chai-as-promised": "^6.0.0",
     "eslint": "^3.19.0",
     "immutable": "^3.8.2",
-    "mocha": "^3.4.1",
+    "mocha": "^6.0.2",
     "nock": "^9.0.13",
     "node-fetch": "^1.6.3",
-    "redux": "^3.6.0",
-    "redux-saga": "^0.15.3",
-    "wnpm-ci": "^6.2.52"
-  },
-  "publishConfig": {
-    "registry": "https://registry.npmjs.org/"
+    "redux": "^4.0.1",
+    "redux-saga": "^1.0.2"
   },
   "dependencies": {}
 }
