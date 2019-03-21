@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wix/redux-saga-tester.git"
+    "url": "https://github.com/omahoito/redux-saga-tester.git"
   },
   "keywords": [
     "redux-saga",
@@ -22,10 +22,6 @@
   ],
   "author": "Guy Benron",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/wix/redux-saga-tester/issues"
-  },
-  "homepage": "https://github.com/wix/redux-saga-tester#readme",
   "devDependencies": {
     "babel": "^6.5.2",
     "babel-cli": "^6.24.1",
